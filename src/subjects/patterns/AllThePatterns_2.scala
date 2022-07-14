@@ -57,8 +57,4 @@ object AllThePatterns_2 extends App {
 //
 //  println(numbersMatch)
 
-//  def doubled(i: Int) = i * 2
-//  Right(42).map(doubled) // Right(84)
-
-
 }
