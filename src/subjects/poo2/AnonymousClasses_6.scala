@@ -2,6 +2,13 @@ package subjects.poo2
 
 /**
   * Created by Pedro.
+ *  With anonymous classes, class definitions don’t need to be stable or reusable.
+ *  When a subclass will only be needed once, the anonymous class syntax can help to simplify your code base.
+ *
+ *  To define a one-time anonymous class, instantiate the parent (and potentially abstract) class and follow
+ *  the class name and parameters with curly braces containing your implementation.
+ *  The result is an instance that does extend the given parent class with a one-time implementation,
+ *  but can be used like an instance from a traditional class definition.
   */
 object AnonymousClasses_6 extends App {
 

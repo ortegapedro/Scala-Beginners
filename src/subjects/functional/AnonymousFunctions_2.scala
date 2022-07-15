@@ -12,8 +12,8 @@ object AnonymousFunctions_2 extends App {
   println(doubler(2))
 
   //another way of defining the previous function
-  //val doubler2 = (x: Int) => x * 2
-  //println(doubler2(2))
+  val doubler2 = (x: Int) => x * 2
+  println(doubler2(2))
 
   // multiple params in a lambda
   val adder: (Int, Int) => Int = (a: Int, b: Int) => a + b

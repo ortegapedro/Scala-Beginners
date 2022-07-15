@@ -19,6 +19,7 @@ object Sequences_5 extends App {
   println(aSequence.iterator.next())
   println(aSequence.iterator.hasNext)
 
+  //clousure
   var res = 1
   aSequence.foreach((x:Int) => res*=x)
   println(res)
@@ -54,37 +55,37 @@ object Sequences_5 extends App {
 //  val numbersSeq: Seq[Int] = numbers  // implicit conversion
 //  println(numbersSeq)
 
-  // vectors
-  val vector: Vector[Int] = Vector(1,2,3)
-  println(vector)
-
-  // vectors vs lists
-
-  val maxRuns = 1000
-  val maxCapacity = 1000000
-
-  def getWriteTime(collection: Seq[Int]): Double = {
-    val r = new Random
-    val times = for {
-      it <- 1 to maxRuns
-    } yield {
-      val currentTime = System.nanoTime()
-      collection.updated(r.nextInt(maxCapacity), r.nextInt())
-      System.nanoTime() - currentTime
-    }
-    times.sum / maxRuns
-  }
-
-  val numbersList = (1 to maxCapacity).toList
-  val numbersVector = (1 to maxCapacity).toVector
-
-
-  // depth of the tree is small
-  println(getWriteTime(numbersVector))
+//  // vectors
+//  val vector: Vector[Int] = Vector(1,2,3)
+//  println(vector)
+//
+//  // vectors vs lists
+//
+//  val maxRuns = 1000
+//  val maxCapacity = 1000000
+//
+//  def getWriteTime(collection: Seq[Int]): Double = {
+//    val r = new Random
+//    val times = for {
+//      it <- 1 to maxRuns
+//    } yield {
+//      val currentTime = System.nanoTime()
+//      collection.updated(r.nextInt(maxCapacity), r.nextInt())
+//      System.nanoTime() - currentTime
+//    }
+//    times.sum / maxRuns
+//  }
+//
+//  val numbersList = (1 to maxCapacity).toList
+//  val numbersVector = (1 to maxCapacity).toVector
+//
+//
+//  // depth of the tree is small
+//  println(getWriteTime(numbersVector))
 
   // keeps reference to tail
   // updating an element in the middle takes long
-  println(getWriteTime(numbersList))
+//  println(getWriteTime(numbersList))
 
 
 }

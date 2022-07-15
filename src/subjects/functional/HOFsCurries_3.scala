@@ -48,13 +48,14 @@ object HOFsCurries_3 extends App {
    en su lugar se devolverá una función que toma las listas faltantes como sus argumentos.
    */
 
+  println("curried functions")
+
   def adder (x:Int)(y:Int):Int = x+y
   val add1: Int => Int = adder(3)
   val add2 = add1(10)
   println(add2)
 
 
-  println("curried functions")
   val superAdder: Int => Int => Int = (x: Int) => (y: Int) => x + y
   val add3 = superAdder(3)  // y => 3 + y
   println(add3(10))

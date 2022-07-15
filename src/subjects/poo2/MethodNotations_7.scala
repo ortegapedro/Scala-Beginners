@@ -38,61 +38,65 @@ object MethodNotations_7 extends App {
   println(mary likes "Inception") // equivalent
 
 
-
-  // "operators" in Scala
-  println("-"*50)
-  println("operators in Scala ")
-  val tom = new Person("Tom", "Fight Club")
-  println(mary + tom)
-  println(mary.+(tom))
-
-
-  println("-"*50)
-  /*
-  println("ALL OPERATORS ARE METHODS")
-  println(1 + 2)
-  println(1.+(2))
-  println("-"*50)
-   */
-
-
-  // prefix notation
-  /*
-    val x = -1  // equivalent with 1.unary_-
-    val y = 1.unary_-
-    */
-  // unary_ prefix only works with - + ~ !
-
-  println(!mary)
-  println(mary.unary_!)
-
-  val p = +mary
-  println( p.name + "  " +p.age)
-
-  println(s"name: ${(+mary).name} age: ${(+mary).age}")
-  println("-"*50)
 //
-//  // postfix notation
-  println("postfix notation")
-  println(mary.isAlive)
-  println(mary isAlive)
+//  // "operators" in Scala
+//  println("-"*50)
+//  println("operators in Scala ")
+//  val tom = new Person("Tom", "Fight Club")
+//  println(mary + tom)
+//  println(mary.+(tom))
 //
-
-
-  // apply
-  println("apply")
-  println(mary.apply())
-  println(mary()) // equivalent
-
-
-  //Others
-  println("-"*50)
-  println((mary + "the Rockstar").apply())
-  println((+mary).age)
-  println(mary learnsScala)
-  println(mary(10))
-
-  def triple(x:Int): Int = x*3
-  val tr = triple _
-  println(tr(-3))
+//
+//  println("-"*50)
+//  /*
+//  println("ALL OPERATORS ARE METHODS")
+//  println(1 + 2)
+//  println(1.+(2))
+//  println("-"*50)
+//   */
+//
+//
+//  // prefix notation
+//  /*
+//    val x = -1  // equivalent with 1.unary_-
+//    val y = 1.unary_-
+//    */
+//  // unary_ prefix only works with - + ~ !
+//
+//  println(!mary)
+//  println(mary.unary_!)
+//
+//  val p = +mary
+//  println( p.name + "  " +p.age)
+//
+//  println(s"name: ${(+mary).name} age: ${(+mary).age}")
+//  println("-"*50)
+////
+////  // postfix notation
+//  println("postfix notation")
+//  println(mary.isAlive)
+//  println(mary isAlive)
+////
+//
+//
+//  // apply
+//  println("apply")
+//  println(mary.apply())
+//  println(mary()) // equivalent
+//
+//
+//  //Others
+//  println("-"*50)
+//  println((mary + "the Rockstar").apply())
+//  println((+mary).age)
+//  println(mary learnsScala)
+//  println(mary(10))
+//
+//  def triple(x:Int): Int = x*3
+//  val tr = triple _
+//  println(tr(-3))
+//
+//  println(10 max 1)
+//  println(10 max 20)
+//  println(10 min 20)
 }

@@ -11,7 +11,7 @@ object Expressions_4 extends App {
 
   println(2 + 3 * 4)
   println("-"*50)
-  // + - * / & | ^ << >> >>> (right shift with zero extension)
+  // + - * / & | ^
 
   println(1 == x)
   // == != > >= < <=
@@ -24,7 +24,6 @@ object Expressions_4 extends App {
   println(aVariable)
 
   println("-"*50)
-  // Instructions (DO) vs Expressions (VALUE)
 
   // IF expression
   val aCondition = true
@@ -48,8 +47,7 @@ object Expressions_4 extends App {
   val aWeirdValue = (aVariable = 33) // Unit === void
   println(aWeirdValue)
   println(aVariable)
-//
-  // side effects: println(), whiles, reassigning
+
 
   // Code blocks
 

@@ -56,8 +56,6 @@ object Inheritance_4 extends App {
 
   // overRIDING vs overLOADING
 
-  // super
-
   // preventing overrides
   // 1 - use final on member
   // 2 - use final on the entire class

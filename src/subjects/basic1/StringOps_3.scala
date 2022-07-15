@@ -14,6 +14,7 @@ object StringOps_3 extends App {
   println(str.replace(" ", "-"))
   println(str.toLowerCase())
   println(str.length)
+  println(str.matches(".*I am.*"))
 
   val aNumberString = "2"
   val aNumber = aNumberString.toInt
@@ -43,6 +44,9 @@ object StringOps_3 extends App {
   println("raw-interpolator")
   // raw-interpolator
   println(raw"This is a \n newline")
+
   val escaped = "This is a \n newline"
   println(raw"$escaped")
+//
+//
 }

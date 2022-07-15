@@ -24,4 +24,5 @@ object DefaultArgs_2 extends App {
   
   savePicture(height = 600, width = 800, format = "bmp")
 
+
 }

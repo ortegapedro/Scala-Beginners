@@ -2,6 +2,8 @@ package subjects.poo2
 
 /**
   * Created by Pedro.
+  * Case classes are like regular classes with a few key differences which we will go over.
+  * Case classes are good for modeling immutable data.
   */
 object CaseClasses_3 extends App {
 
@@ -36,5 +38,10 @@ object CaseClasses_3 extends App {
 //
 //  // 7. CCs can be used in PATTERN MATCHING
 
+/*
+Notice how the keyword new was not used to instantiate the Book case class.
+This is because case classes have an apply method by default which takes care of object construction.
 
+When you create a case class with parameters, the parameters are public vals.
+ */
 }

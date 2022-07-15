@@ -1,7 +1,7 @@
 package otherPackage
 
 /**
-  * Created by Daniel.
+  * Created by Pedro.
   */
 class PrinceCharming {
 

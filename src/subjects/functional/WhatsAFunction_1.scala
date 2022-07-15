@@ -2,6 +2,7 @@ package subjects.functional
 
 /**
   * Created by Pedro.
+  *
   */
 object WhatsAFunction_1 extends App {
 

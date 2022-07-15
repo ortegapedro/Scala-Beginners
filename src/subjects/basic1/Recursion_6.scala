@@ -82,7 +82,6 @@ object RecursionEX2 extends App {
 }
 
 object RecursionEX3 extends App {
-  def nombre_funcion(list: Int*){}
 
   def fibonacci(n: Int): Int = {
     def fiboTailrec(i: Int = 2, last: Int = 1, nextToLast: Int = 1): Int =

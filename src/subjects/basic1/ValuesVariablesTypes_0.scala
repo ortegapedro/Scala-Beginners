@@ -25,6 +25,10 @@ object ValuesVariablesTypes_0 extends App {
 
   // variables
   var aVariable: Int = 4
+  // change value
+  aVariable = 5
 
-  aVariable = 5 // side effects
+  //No sensitive
+  val A = 2
+  val a = ""
 }

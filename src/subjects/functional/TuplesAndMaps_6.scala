@@ -7,8 +7,7 @@ import scala.annotation.tailrec
   */
 object TuplesAndMaps_6 extends App {
 
-  val A =2;
-  val a = ""
+
 //   tuples = finite ordered "lists"
   val aTuple = (2, "hello, Scala")  // Tuple2[Int, String] = (Int, String)
 

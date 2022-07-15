@@ -7,24 +7,24 @@ package subjects.poo2
 object OOBasics extends App {
 
 
-//  val person = new Person("John", 26)
-//  println(person.x)
-//  person.greet("Pedro")
-//  person.greet()
+  val person = new Person("John", 26)
+  println(person.x)
+  person.greet("Pedro")
+  person.greet()
 
-  val author = new Writer("Charles", "Dickens", 1812)
-
-  val novel = new Novel("Great Expectations", 1861, author)
-
-  println(novel.authorAge)
-
-  val imposter = new Writer("Charles", "Dickens", 1812)
-  println(novel.isWrittenBy(imposter))
-
-  val counter = new Counter
+//  val author = new Writer("Charles", "Dickens", 1812)
+//
+//  val novel = new Novel("Great Expectations", 1861, author)
+//
+//  println(novel.authorAge)
+//
+//  val imposter = new Writer("Charles", "Dickens", 1812)
+//  println(novel.isWrittenBy(imposter))
+//
+//  val counter = new Counter
 //  counter.inc.print
 //  counter.inc.inc.inc.print
-  counter.inc(10).print
+//  counter.inc(10).print
 }
 
 

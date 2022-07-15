@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/basic1/CBNvsCBV_1.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/basic1/DefaultArgs_2.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/basic1/Expressions_4.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/basic1/Functions_5.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/basic1/Recursion_6.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/basic1/StringOps_3.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/basic1/ValuesVariablesTypes_0.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/functional/AnonymousFunctions_2.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/functional/HOFsCurries_3.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/functional/HandlingFailure_8.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/functional/MapFlatmapFilterFor_7.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/functional/Options_4.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/functional/Sequences_5.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/functional/TuplesAndMaps_6.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/functional/WhatsAFunction_1.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/intro/HelloScala.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/patterns/AllThePatterns_2.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/patterns/PatternMatching_1.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/AbstractDataTypes_5.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/AnonymousClasses_6.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/CaseClasses_3.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/Exceptions_8.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/Inheritance_4.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/MethodNotations_7.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/OOBasics1.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/OOBasics_1.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/PackagingAndImports_2.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/subjects/poo2/package.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/themes/intro/HelloScala.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../play-scala-seed/build.sbt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/intro/HelloScala.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part1basics/CBNvsCBV.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part1basics/Expressions.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part1basics/Functions.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part1basics/Recursion.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part2oop/CaseClasses.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part2oop/Inheritance.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part2oop/MethodNotations.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part3fp/AnonymousFunctions.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part3fp/HOFsCurries.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part3fp/MapFlatmapFilterFor.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part3fp/WhatsAFunction.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part4pm/PatternMatching.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../scala-2-beginners/src/lectures/part4pm/PatternsEverywhere.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../wjeew_datio_scala_crash_course_exam/scalacrashcourse/src/main/scala/com/bbva/datioamproduct/fdevdatio/ModuleTwoExam.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/actuaria-async/src/main/java/mx/gob/tfja/sjl/constants/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/actuaria-async/src/main/java/mx/gob/tfja/sjl/logic/PreparacionNotificacion.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/actuaria-async/src/main/java/mx/gob/tfja/sjl/logic/PreparacionNotificacionOficio.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/actuaria-async/src/main/java/mx/gob/tfja/sjl/utils/ActuUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/actuaria-async/src/main/java/mx/gob/tfja/sjl/utils/MatchDocumentBuilder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/actuaria-async/src/test/java/TestAsync.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/async-actions/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/async-actions/src/main/java/mx/gob/tfja/sjl/logic/actu/CopyActuFilesBoletin.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/java/mx/gob/tfja/sjl/actuary/GenericActuaryBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/java/mx/gob/tfja/sjl/actuary/ManageDataActuary.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/java/mx/gob/tfja/sjl/actuary/SetUpActors.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/java/mx/gob/tfja/sjl/constants/ConstantsActuary.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/resources/label_es.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/webapp/content/actuary/dialogAddNotification.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/webapp/content/actuary/notifications.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/webapp/content/actuary/peritos/listPeritos.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/webapp/content/expedienteResponsabilidad/partes/apelante/addActor.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/webapp/content/expedienteResponsabilidad/partes/apelante/addAuthAndDel.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/webapp/content/expedienteResponsabilidad/partes/apelante/addLegalRepresentPF.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/webapp/content/expedienteResponsabilidad/partes/apelante/entePublico.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-actuaria/src/main/webapp/content/expedienteResponsabilidad/partes/apelante/listActors.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-components/src/main/resources/components_es.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-cronboletin/src/main/java/mx/gob/tfja/sjl/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-cronboletin/src/main/java/mx/gob/tfja/sjl/jobs/SaveDocuments.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-pdi/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-pdi/src/main/java/mx/gob/tfja/sjl/util/UtilsPDI.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/dgsjl-pdi/src/main/webapp/content/demand/online/responsabilidadAdmin/partes/apelante/listActors.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../tjfa/pdi-async/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -2,8 +2,10 @@ package subjects.basic1
 
 /**
   * In Scala when arguments pass through call-by-value function
- *  it compute the passed-in expression’s or arguments value once before calling the function .
- *  But a call-by-Name function in Scala calls the expression and recompute the passed-in expression’s value every time it get accessed inside the function.
+ *  it compute the passed-in expression’s or arguments value once before calling the function.
+ *
+ *  But a call-by-Name function in Scala calls the expression and recompute
+ *  the passed-in expression’s value every time it get accessed inside the function.
   */
 object CBNvsCBV_1 extends App {
 

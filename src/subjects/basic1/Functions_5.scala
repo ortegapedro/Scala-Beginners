@@ -1,7 +1,10 @@
 package subjects.basic1
 
 /**
- * Created by Pedro on 07-May-18.
+ * Created by Pedro
+ * A Scala method is a part of a class which has a name, a signature, optionally some annotations,
+ * and some bytecode where as a function in Scala is a complete object which can be assigned to a variable.
+ * In other words, a function, which is defined as a member of some object, is called a method.
  */
 object Functions_5 extends App {
 
@@ -45,6 +48,20 @@ object Functions_5 extends App {
   println(resp)
 
 
+  def printList(list: Int*): Unit ={
+    list.foreach(print)
+  }
+
+  printList(1,2,3,4,5,6,7)
+/*
+  A closure is a function, whose return value depends on the value of one or more variables
+  declared outside this function.
+ */
+
+  var factor = 3
+  val multiplier = (i:Int) => i * factor
+  println(multiplier)
+
   /*
     1.  Una funcion de saludo (name, age) => "Hi, my name is $name and I am $age years old."
     2.  Funcion para calcular un factorial 1 * 2 * 3 * .. * n
@@ -56,10 +73,10 @@ object Functions_5 extends App {
    */
 
 
-  def greetingForKids(name: String, age: Int): String =
-    "Hi, my name is " + name + " and I am " + age + " years old."
-
-  println(greetingForKids("David", 12))
+//  def greetingForKids(name: String, age: Int): String =
+//    "Hi, my name is " + name + " and I am " + age + " years old."
+//
+//  println(greetingForKids("David", 12))
   //
   //  println("-"*50)
   //  def factorial(n: Int): Int =

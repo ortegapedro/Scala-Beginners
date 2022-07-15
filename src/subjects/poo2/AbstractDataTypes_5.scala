@@ -37,7 +37,6 @@ object AbstractDataTypes_5 extends App {
     def drink(string: String):Unit
   }
 
-
   class Crocodile extends Animal with Carnivore with ColdBlooded {
     override val creatureType: String = "croc"
     def eat: Unit = println("nomnomnom")

@@ -1,8 +1,10 @@
 package otherPackage
 
 /**
-  * Created by Daniel.
+  * Created by Pedro.
   */
 class Cinderella {
+
+  val book:Book = new Book("Scala",300);
 
 }

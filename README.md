@@ -8,9 +8,13 @@ Cierta persona encargada del cifrado de caracteres requiere de un programa que l
 carácter, las correspondencias son las siguientes:
 
 a = L
+
 e = 9
+
 i = $
+
 o = R
+
 u = 4
 
 Ejercicio: Implementa la lógica correspondiente para que la persona pueda terminar su día laboral.
@@ -58,12 +62,18 @@ Es llamado así en honor al filósofo y matemático francés Blaise Pascal.
 
 Te mostramos una representación del triángulo de Pascal:
 
-             1
-           1    1
-        1    2    1
-     1    3    3    1
-   1    4    6    4    1
-1   5   10   10    5     1
+                     1
+                     
+                   1    1
+                   
+                1    2    1
+                
+             1    3    3    1
+             
+         1     4     6     4     1
+           
+      1     5    10    10     5     1
+
 ...
 
 Este triángulo puede crecer en renglones tanto como nosotros queramos (o la memoria de la computadora lo permita),

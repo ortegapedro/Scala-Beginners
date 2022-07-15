@@ -4,31 +4,39 @@ package subjects.intro
 import scala.annotation.tailrec
 import scala.util.Try
 
+
+
+
 object HelloScala extends App {
   println("Hello")
 }
 
 object variables extends App {
+  //Mutable e inmutable
   val y = 10
-  //val y =12
+  //val y = 12
 
   var x = 10
   x = 15
-  //x = 15.5
+  //  x = 15.5
 
   //Lazy vals
   //  val  w = z -1
   //  val z = 100
 
+  // lazy : optimización
   lazy val w = z - 1
   lazy val z = 100
   println(w)
+
+  val l = LazyList(1, 2, 3, 4)
+  println(l.headOption)
 }
 
 object tiposNumericos extends App {
   var b: Byte = 127
-  //b = -129
-  //b = 128
+  //  b = -129
+  //  b = 128
 
   var s: Short = 32767
   //s = -32769
@@ -41,6 +49,8 @@ object tiposNumericos extends App {
   var l: Long = 9223372036854775807L
 
   //Convertir  Byte ➤Short ➤Int ➤Long ➤Float ➤Double
+  //  var s: Short = 32767
+  //  var b: Byte = 127
   s = b
   //b = s
 
@@ -82,46 +92,72 @@ object functionsExamples extends App {
   println(squareFc(2))
 
   //funcion anonima asignada a un valor
+  val getTheAnswer = () => 42
+
   val square = (i: Int) => {
     i * i
   }
   println(square(2))
+
+  val sum = (i: Int, y: Int) => {
+    i + y
+  }
+  println(sum(2, 2))
 
   def add(x: Int, y: Int): Int = {
     x + y
   }
 
   println(add(2, 3))
+
+
 }
 
 object arraysExample extends App {
+
   var books: Array[String] = new Array[String](3)
+  books(0) = "Beginning Scala"
+  books(1) = "Beginning Java"
+  books(2) = "Beginning Groovy"
+  println(books(0))
+
   var books2 = new Array[String](3)
+
   var books3 = Array("Beginning Scala", "Beginning Java", "Beginning Groovy")
+  books3(0) = "Beginning Scala updated"
+  println(books3(0))
 }
 
 object listasexample extends App {
+
   val emptyList: List[Nothing] = List()
+
   val booksList: List[String] = List("Beginning Scala", "Beginning Groovy", "Beginning Java")
   booksList.appended("newBook")
   booksList + "nuevo libro"
+  booksList.take(1)
 }
 
 object tuplasExample extends App {
+
   val tuple = (1, false, "Scala")
+
   val tuple2 = "title" -> "Beginning Scala"
+
   //acceder
   val third = tuple._3
   println(third)
 }
 
 object mapasExample extends App {
+
   val mapEx = Map('a' -> 1, 'b' -> 2, 'c' -> 3, 'd' -> 4, 'e' -> 5)
 
   println(mapEx('a'))
 
   val mapEx2 = Map(('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', 5))
   println(mapEx2('b'))
+
 }
 
 object condicionesExample extends App {
@@ -139,12 +175,15 @@ object condicionesExample extends App {
 }
 
 object buclesExample extends App {
+
+  val exp = true
+  while (exp) println("Working...")
+
+  while (exp) {
+    println("Working...")
+  }
+
   val books = Array("Beginning Scala", "Beginning Java", "Beginning Groovy")
-  //    while (exp) println("Working...")
-  //
-  //    while (exp) {
-  //      println("Working...")
-  //    }
 
   for (book <- books)
     println(book)
@@ -295,6 +334,9 @@ object tiposExample extends App {
 //Genericos
 
 object genericosExample extends App {
+
+  //Comodines ;  letras mayusculas entre corchetes
+
   def f[A](x: A): String = s"$x"
 
   println(f("ABC"))
@@ -304,34 +346,38 @@ object genericosExample extends App {
     def g(x: A, f: A => B): B = f(x)
   }
 
-  object ejemplo extends ejemplo[Int, String]
+  object ejemplo extends ejemplo[Int, String] //[A, B]
 
   println(ejemplo.g(3, f))
 }
 
 object tiposAlgebraicos extends App {
 
-  //Tipos algebraicos
+  //Tipos algebraicos o polinomicos (suma o producto(Strings, Case clases))
 
-  sealed trait Persona3
+  sealed trait Persona
 
-  case class Esutidante2(nombre: String) extends Persona3
+  case class Estudiante(nombre: String) extends Persona
 
-  case class Profesor(nombre: String, profesio: String) extends Persona3
+  case class Profesor(nombre: String, profesio: String) extends Persona
 
-  val me: Persona3 = Profesor("Pedro", "Desarrollador")
+  val me: Persona = Profesor("Pedro", "Desarrollador")
 
   println(me)
 
   me match {
-    case Profesor(nombre, profesio) => s"$nombre es $profesio"
-    case Esutidante2(nombre) => s"$nombre es estudiante"
+    case Profesor(nombre, profesion) => s"$nombre es $profesion"
+    case Estudiante(nombre) => s"$nombre es estudiante"
   }
+
 }
 
 //disyunciones
+//enfocados para cuendo se presentan nulos (some y None)
 object disyunciones extends App {
   //(a y B)  o (A union B)
+  //tratar los valores nulos como inexistentes para operar cuando el valor exista
+  //verlos como listas de un elemento
 
   val opA = Option(2)
   println(opA)
@@ -357,10 +403,16 @@ object disyunciones extends App {
 }
 
 // Try and either
+// enfocado para cuendo se tienen exepciones ()
 object tryExample extends App {
 
+  final case class CustomException(private val message: String = "",
+                                   private val cause: Throwable = None.orNull)
+    extends Exception(message, cause)
+
+  // Failure  y Success
   try {
-    //      throw newException("some exception...")
+          throw CustomException("some exception...")
   } finally {
     println("This will always be printed")
   }
@@ -372,7 +424,8 @@ object tryExample extends App {
     case n: NullPointerException => // handle null pointer
   }
 
-  val aTry = Try(Nil.head)
+  val aTry = Try(1 / 0)
+  //  val aTry = Try(Nil.head)
 
   println(aTry.map(x => s"$x"))
 
@@ -380,22 +433,38 @@ object tryExample extends App {
 
 object eitherExample extends App {
   //  Convention dictates that Left is used for failure and Right is used for success.
+
+  //El lado derecho es el unico definido por default [Nothing,Int] , map opera sobre el lado derecho
+
   println(Right(10).map(_ + 1))
   //println(Left(10).map(_ + 1))
+
+  //se especifica ambos lados
   println(Left[Int, Int](10).map(_ + 1))
 
-  val  in = "2"
-  val result: Either[String,Int] =
+  val in = "2"
+  val result: Either[String, Int] =
     try Right(in.toInt)
     catch {
       case e: NumberFormatException => Left(in)
     }
 
   result match {
-    case Right(x) => s"You passed me the Int: $x, which I will increment. $x + 1 = ${x+1}"
-    case Left(x)  => s"You passed me the String: $x"
+    case Right(x) => s"You passed me the Int: $x, which I will increment. $x + 1 = ${x + 1}"
+    case Left(x) => s"You passed me the String: $x"
   }
 }
 
+/**
+ * 1. ¿Cómo obtener el primer y último carácter de la cadena "Hola" en Scala?
+ * 2. Escriba un bucle for para calcular el producto del código Unicode (método toLong) de todas las letras de la cadena.
+ * Por ejemplo, el producto de todas las cadenas en "Hola" es 9415087488L
+ * 3. Escriba una función WordCount para contar el número de palabras en la cadena entrante
+ * 4. Escriba una función llamada minmax (valores: Array [Int]), que devuelve una tupla con de los valores mínimo y máximo en el array
+ * 5. Escribe una funcion que reciba una lista de objetos de tipo "Persona" y que al iterar la lista imprima a que tipo de persona
+ * corresponde, deben de existir al menos estas tres:
+ * Alumno(nombre, edad, materias), Profesor(nombre, edad, departamentoId), Oyente(nombre, edad) y Otro (Director, Suplente).
+ *
+ */
 
 
