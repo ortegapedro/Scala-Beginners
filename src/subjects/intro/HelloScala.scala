@@ -5,8 +5,6 @@ import scala.annotation.tailrec
 import scala.util.Try
 
 
-
-
 object HelloScala extends App {
   println("Hello")
 }
@@ -14,15 +12,12 @@ object HelloScala extends App {
 object variables extends App {
   //Mutable e inmutable
   val y = 10
-  //val y = 12
+//  val y = 12
 
   var x = 10
   x = 15
-  //  x = 15.5
+//    x = 15.5
 
-  //Lazy vals
-  //  val  w = z -1
-  //  val z = 100
 
   // lazy : optimización
   lazy val w = z - 1
@@ -35,12 +30,12 @@ object variables extends App {
 
 object tiposNumericos extends App {
   var b: Byte = 127
-  //  b = -129
-  //  b = 128
+//    b = -129
+//    b = 128
 
   var s: Short = 32767
-  //s = -32769
-  //s = 32769
+//  s = -32769
+//  s = 32769
 
   var i: Int = -2147483647
   //i = -2147483649
@@ -52,7 +47,7 @@ object tiposNumericos extends App {
   //  var s: Short = 32767
   //  var b: Byte = 127
   s = b
-  //b = s
+//  b = s
 
   l = i
   //i = l
@@ -123,7 +118,7 @@ object arraysExample extends App {
 
   var books2 = new Array[String](3)
 
-  var books3 = Array("Beginning Scala", "Beginning Java", "Beginning Groovy")
+  val books3 = Array("Beginning Scala", "Beginning Java", "Beginning Groovy")
   books3(0) = "Beginning Scala updated"
   println(books3(0))
 }
@@ -455,6 +450,20 @@ object eitherExample extends App {
   }
 }
 
+object ejercicio1 extends App {
+  trait persona
+  trait persona2
+
+  trait actor extends persona with persona2
+
+  def foo(a:Int, b:Int)(x:Int)(y:Int): Int = a * b + x - y
+
+  var a = foo _
+  println(a(1,2))
+
+  println( 'a'.toInt)
+
+}
 /**
  * 1. ¿Cómo obtener el primer y último carácter de la cadena "Hola" en Scala?
  * 2. Escriba un bucle for para calcular el producto del código Unicode (método toLong) de todas las letras de la cadena.
@@ -468,3 +477,88 @@ object eitherExample extends App {
  */
 
 
+
+/*
+* 5. Escribe una funcion que reciba una lista de objetos de tipo "Persona" y que al iterar la lista imprima a que tipo de persona
+* corresponde, deben de existir al menos estas tres:
+* Alumno(nombre, edad, materias), Profesor(nombre, edad, departamentoId), Oyente(nombre, edad) y Otro (Director, Suplente).
+ */
+object ejercicio5 extends App {
+
+  trait Persona
+  case class Alumno(nombre:String, edad:Int, materias:List[String]) extends Persona
+  case class Profesor(nombre:String, edad:Int, departamentoId:String) extends Persona
+  case class Oyente(nombre:String, edad:Int) extends Persona
+  case class Director(nombre:String, edad:Int, idEscuela:String) extends Persona
+  case class Suplente(nombre:String, edad:Int, departamentoId:String) extends Persona
+
+  val personas:List[Persona] = List(
+    Alumno("Manuel",35,List("a","b")),
+    Alumno("Juan",20,List("d","e")),
+    Profesor("Itzel",35,"dep1"),
+    Oyente("Laura",28),
+    Profesor("Jessica",35,"escuela1"),
+    Suplente("Miguel",25,"dep2"),
+    Director("Ricardo",50,"esc1")
+  )
+
+  personas.foreach {
+    case Alumno(nombre, edad, materias) => println(s"Es el alumno $nombre con edad de $edad y cursa las materias: ${materias.reduce(_+", "+_)}")
+    case Profesor(nombre, edad, deptId) => println(s"Es el profesor $nombre con edad de $edad y trabaja en el departamento $deptId")
+    case Oyente(nombre, edad) => println(s"Es el oyente $nombre con edad de $edad")
+    case persona => println(s"Es otro tipo de persona: $persona")
+  }
+}
+
+/*
+Una hamburguesería famosa tiene un sistema que le permite establecer un ingrediente principal en un producto y
+generar N subproductos basados en el primero, por ejemplo:
+
+ Establecer el ingrediente carne para una hamburguesa
+  Crear una hamburguesa de carne con queso
+  Crear una hamburguesa de carne con cebolla
+  Crear una hamburguesa de carne con cebolla, queso y pepinillo
+ Establecer el ingrediente champiñón para una hamburguesa
+  Crear una hamburguesa de champiñones y queso
+  Crear una hamburguesa de champiñones, queso y papas
+
+Ejercicio: Utilizando el concepto de funciones de orden superior implementa un método que dé soporte al flujo
+previamente descrito.
+
+Nota: Considera los ingredientes con un tipo de dato String
+
+*/
+object Exercise2 extends App {
+
+//  def hamburguer(principalIngredient: String): String => String =
+//    (otherIngredients: String*) => s"Principal: $principalIngredient, Secondary: $otherIngredients"
+
+  def hamburguer(principalIngredient: String)(otherIngredients: String*) =
+     s"Principal: $principalIngredient, Others: ${otherIngredients.reduce(_+", "+_)}"
+
+  println(hamburguer("carne")("queso"))
+  println(hamburguer("carne")("cebolla"))
+  println(hamburguer("carne")("cebolla" ,"queso", "pepinillo"))
+
+  println(hamburguer("champiñones")("queso"))
+  println(hamburguer("champiñones")("queso","papas"))
+
+}
+
+/*
+Utilizando el concepto de funciones de orden superior implementa un método que pueda recibir un String,
+ejecutar alguna operación con este String (el consumidor establece el comportamiento) y retornar un String,
+en caso de que la ejecución falle se deberá propagar una custom exception llamada HigherOrderFunctionException.
+*/
+object Exercise3 extends App {
+  class HigherOrderFunctionException(message: String = None.orNull, cause: Throwable = None.orNull)
+    extends Exception(message, cause)
+
+  def higherOrderFunction(value: String, function: String => String): String = {
+    Try(function(value)).getOrElse(throw new HigherOrderFunctionException)
+  }
+
+  println(higherOrderFunction("1", (x=> x.toInt.toString)))
+  println(higherOrderFunction("noSoyNumero", (x=> x.toInt.toString)))
+
+}
